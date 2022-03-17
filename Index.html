@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Acrata</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+<h1 id="title">Formulario De Encuesta</h1>
+  <p id="description">Gracias por tomarte tu tiempo para completar nuestro formulario.</p>
+  <form id="survey-form">
+    <label id="name-label">Nombre</label>
+      <input class="formulario" type="text" placeholder="Ingrese Su Nombre" name="name" id="name" required>
+  <div>
+    <label id="email-label">E-mail</label>
+      <input class="formulario" type="email" placeholder="Ingrese Su E-Mail" name="email" id="email" required>  
+  </div>
+  <div>
+    <label id="number-label">Edad(Opcional)</label>
+      <input class="formulario" type="number" placeholder="Edad" name="number" id="number" min="0" max="99">    </div>
+   <div>
+     <p>¿Cuales de las siguientes opciones describe su ocupación?<p>
+      <select id="dropdown" name="ocupacion" required class="form">
+        <option value="ocupacion" selected disable>Por favor seleccione una opción</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="amo/a de casa">Amo/a de casa</option>
+        <option value="trabajo-rel">Trabajador/a en relación de dependencia</option>
+        <option value="trabajo-ind">Trabajador/a independiente</option>
+        <option value="Otao">Otra</option>
+      </select>
+    </div>
+    <div>
+      <p>¿Cuántos hijos/hijas tiene?</p>
+      <input type="radio" name="hijos" value="ninguno" class="radio" checked>Ninguno
+      <input type="radio" name="hijos" value="1" class="radio">Uno 
+      <input type="radio" name="hijos" value="dos" class="radio">Dos
+      <input type="radio" name="hijos" value="tres o más" class="radio">Tres o más
+    </div>
+    <div>
+      <p>¿Cuál o cuales son sus pasatiempos?<p>
+      <label><input type="checkbox" value="peliculas y series" class="checkbox">Mirar peliculas y series</label>
+      <label><input type="checkbox" value="pintar-dibujar" class="checkbox"> Pintar y/o dibujar</label>
+      <label><input type= "checkbox" value="Escribir" class="checkbox">Escribir</label>
+      <label><input type="checkbox" value="leer" class="checkbox">Leer</label>
+      <label><input type="checkbox" value="deporte" class="checkbox">Hacer deporte</label><label><input type="checkbox" value="otro" class="checkbox">Otro<input type="text" placeholder="ingrese su pasatiempo" class="otro"></label>
+      </div>
+      <div>
+        <p>Comentarios o Sugerencias</p>
+          <textarea sentences placeholder="Ingrese sus comentarios aquí" id="comentario" name="comentarios"></textarea>
+      </div>
+    <div>
+      <button type="Submit" id="submit" class="submit">Enviar Formulario</button>
+    </div>
+ </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
